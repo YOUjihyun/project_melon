@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+.myInfoP {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.myContents{
+	width: 1008px;
+	margin: 0 auto;
+	margin-top: 26px;
+	min-height: 350px;
+}
+
+.my_info_list {
+	margin-top: 16px;
+}
+
+.inline {
+	display: inline-block;
+	
+}
+
+.lilili{
+	display: inline-block;
+	border: 1px solid red;
+	width: 437px;
+    padding: 16px 28px 24px 29px;
+    border: 1px solid #d3d3d3;
+	height: 150px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+}
+
+
+.gate_info > a {
+	color: black;
+	font-weight: bold;
+	font-size:12px;
+    line-height: 26px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+}
+.altbtn{
+	text-decoration: none;
+	border-radius: 6px;
+	color:#000;
+	display: block;
+    float: right;
+    border: 1px solid #969696;
+    padding: 0px 10px 0px 10px;
+}
+.right{
+	display: inline-block;
+	float:right;
+}
+
+.gate_info > h3 {
+	display: inline-block;
+}
+
+.my_info_list .gate_info h3 {
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #000;
+}
+
+.h2_title{
+	color: #1a1a1a;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","돋움","Dotum","Apple Gothic",sans-serif;
+    letter-spacing: -2px;
+}
+
+.txt_list {
+	clear: both;
+	margin-top: 45px;
+}
+
+.txt_list ul li {
+	padding-top: 6px;
+}
+
+.txt_second_info {
+	margin-top: 14px;
+    margin-left: 1px;
+    padding-left: 17px;
+    background: url(/Melon/img/user/join/ico_caution01.png) no-repeat 0 4px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+    color: #666;
+}
+
+.bottom_line {
+	margin-top: 45px;
+}
+
+.bottom_line .withdraw{
+	float: center;
+   	text-decoration:underline;
+    font-size: 13px;
+    line-height: 26px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #000;
+}
+
+
+/* 폰번호 변경 */
+#alterPhoneWrapper {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	width: 500px;
+	height: 400px;
+	background-color: #fff;
+	z-index: 9999;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	padding-top: 44px;
+	display: none;
+}
+/* 이메일 변경*/
+#alterEmailWrapper2{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	width: 500px;
+	height: 400px;
+	background-color: #fff;
+	z-index: 9999;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	padding-top: 44px;
+	display: none;
+}
+
+#alterPhoneWrapper > h1 {
+	padding: 0 55px;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333;
+    letter-spacing: -3px;
+}
+#alterEmailWrapper2 > h1 {
+	padding: 0 55px;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333;
+    letter-spacing: -3px;
+}
+
+.cntt {
+	background: 0;
+    padding: 39px 58px 0;
+}
+
+.cnt_txt1 {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333;
+    font-weight: 700;
+}
+
+.cnt_txt2 {
+	font-size: 16px;
+    line-height: 26px;
+    color: #7d7d7d;
+    letter-spacing: -1px;
+    margin-top: 19px;
+}
+
+.cntt table {
+	margin-top: 27px;
+}
+
+.cntt table tr td {
+	font-size: 17px;
+	color: #333;
+}
+
+#changePhoneNumber {
+	width: 220px;
+	height: 43px;
+    padding: 0 7px;
+    border: 1px solid #b6b6b6;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    color: #666;
+    box-shadow: 1px 1px 0 0 rgba(0,0,0,0.05) inset;
+    font-size: 17px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+}
+#changeEmail {
+	width: 220px;
+	height: 43px;
+    padding: 0 7px;
+    border: 1px solid #b6b6b6;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    color: #666;
+    box-shadow: 1px 1px 0 0 rgba(0,0,0,0.05) inset;
+    font-size: 17px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+}
+#changePhoneButton {
+	width: 120px;
+	border: 1px solid #00cd3c;
+	background: 0;
+	border-radius: 25px;
+	padding: 20px;
+	margin-top: 20px;
+	color: #00cd3c;
+	font-size: 16px;
+	font-weight: 700;
+}
+#changeEmailButton{
+	width: 120px;
+	border: 1px solid #00cd3c;
+	background: 0;
+	border-radius: 25px;
+	padding: 20px;
+	margin-top: 20px;
+	color: #00cd3c;
+	font-size: 16px;
+	font-weight: 700;
+}
+.close_btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    border: 0;
+    background: 0;
+}
+
+.close_btn > span {
+	display: inline-block;
+	width: 21px;
+    height: 21px;
+    background: url(/Melon/img/user/login/btn_close_login.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+

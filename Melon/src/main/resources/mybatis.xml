@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+	<typeAliases>
+ 		<typeAlias type="com.ktds.chart.vo.ChartVO" alias="ChartVO" />
+		<typeAlias type="com.ktds.notice.vo.NoticeVO" alias="NoticeVO" />
+		<typeAlias type="com.ktds.notice.vo.NoticeSearchVO" alias="NoticeSearchVO" />
+		<typeAlias type="com.ktds.notice.vo.NoticeListVO" alias="NoticeListVO" />
+		<typeAlias type="com.ktds.magazine.vo.MagazineVO" alias="MagazineVO" />
+		<typeAlias type="com.ktds.main.vo.UserVO" alias="UserVO" />
+		<typeAlias type="com.ktds.artist.vo.ArtistVO" alias="ArtistVO" />
+		<typeAlias type="com.ktds.reply.vo.ReplyVO" alias="ReplyVO" />
+	</typeAliases> 
+	
+	<mappers>
+		<mapper resource="com/ktds/notice/dao/sql/NoticeDao.xml"/>
+		<mapper resource="com/ktds/magazine/dao/sql/magazineDao.xml"/>
+		<mapper resource="paging.xml"/>
+		<mapper resource="com/ktds/main/dao/sql/userDao.xml"/>
+		<mapper resource="com/ktds/chart/dao/sql/chartDao.xml" />
+		<mapper resource="com/ktds/search/dao/sql/searchDao.xml" />
+		<mapper resource="com/ktds/reply/dao/sql/replyDao.xml" />
+		<mapper resource="com/ktds/artist/dao/sql/artistDao.xml" />
+	</mappers>
+</configuration>

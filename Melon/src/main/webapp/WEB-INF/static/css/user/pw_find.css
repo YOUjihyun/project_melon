@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.section-tab ul li:last-child a {
+	color: #00b423;
+    border-bottom: 3px solid #00cd3c;
+}
+
+.pw-body {
+	border: 1px solid #e1e1e1;
+    background-color: #fff;
+    padding: 0 58px;
+    position: relative;
+}

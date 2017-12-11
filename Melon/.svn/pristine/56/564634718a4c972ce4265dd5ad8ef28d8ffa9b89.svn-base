@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+#noticeWrapper {
+	margin: 0;
+	padding: 0;
+}
+
+.conts {
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1008px;
+    min-height: 800px;
+    padding: 52px 0 88px;
+}
+
+.customCenter {
+	color: #1a1a1a;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","돋움",Dotum,"Apple Gothic",sans-serif;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.conts_tab {
+    position: relative;
+    background-color: #ebf0ed;
+}
+
+.conts_tab ul {
+	position: relative;
+    width: 1008px;
+    border-top: 2px solid #848484;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.conts_tab ul li {
+    float: left;
+    background-color: #ebf0ed;
+}
+
+.conts_tab ul li:first-child {
+	margin-left: -1px;
+}
+
+.link_tab {
+	display: block;
+    position: relative;
+    width: 192px;
+    min-height: 16px;
+    padding: 10px 4px;
+    border-bottom: 0;
+    color: #333;
+    font-size: 12px;
+    line-height: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #d9d9d9;
+}
+
+.conts_tab ul li:nth-child(2) .link_tab {
+    width: 191px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    color: #6ea300;
+    font-weight: bold;
+}
+
+.search_head {
+	margin-top: 55px;
+}
+
+#classifyOption {
+	display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 27px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.pageList {
+	margin: 0 auto;
+	width: 1008px;
+}
+
+.pageList table {
+	width: 100%;
+	border-spacing: 0;
+	margin-top: 8px;
+	border-top: 2px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.pageList table tr th {
+	height: 33px;
+	line-height: 33px;
+	border-bottom: 1px solid #cfcfcf;
+	color: #000;
+	text-align: center;
+    vertical-align: middle;
+    background-color: #fafafa;
+}
+
+.pageList table tr td {
+    border-top: 1px solid #e6e6e6;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.textMid {
+	text-align: center;
+}
+
+
+.pageList table tr td a {
+	text-decoration: none;
+	color: #666;
+}
+
+.pageList table tr td a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+
+.tableStyle table tr td a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.importImg {
+	display: inline-block;
+	width: 33px;
+    height: 16px;
+    background: url(/Melon/img/notice/bg_sprite_red.png) no-repeat -673px 1px;
+    padding-top: 3px;
+}
+
+.wrap {
+	height: 16px;
+    position: relative;
+    padding: 11px 23px;
+    vertical-align: middle;
+}
+
+.wrap.cate {
+	display: inline-block;
+	width: 74px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap.no {
+	text-align: center;
+}
+
+.icon-new {
+	display: inline-block;
+	width: 20px;
+    height: 16px;
+    background: url(/Melon/img/notice/bg_sprite_cmt.png) no-repeat -165px 0;
+    overflow: hidden;
+    vertical-align: -3px;
+}
+
+.pagingWrapper{
+	margin-top: 24px;
+    text-align: center;
+	margin-bottom : 20px;
+	font-color: #000000;
+}
+
+.searchWrapper{
+	margin-top: 12px;
+	text-align: center;
+}
+
+#noticeSearchKeyword{
+    width: 184px;
+    height: 24px;
+    padding: 0 7px;
+    border: 1px solid #b6b6b6;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    box-shadow: none;
+    font-size: 11px;
+    font-family: dotum,"돋움","Apple Gothic",sans-serif;
+}
+
+.noticeGoFirstPageBtn{
+    background: url(/Melon/img/notice/btn_paginate.png) no-repeat 0 0;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.noticeGoPrePageBtn {
+	background: url(/Melon/img/notice/btn_paginate.png) no-repeat -26px 0;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.noticeGoNextPageBtn{
+	background: url(/Melon/img/notice/btn_paginate.png) no-repeat -80px 0;
+	height: 24px;
+	width: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.noticeGoLastPageBtn{
+	background: url(/Melon/img/notice/btn_paginate.png) no-repeat -110px 0;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#noticeSearchBtn {
+	height: 26px;
+    padding-right: 8px;
+    color: #666;
+    font-size: 11px;
+    line-height: 21px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#noticeSearchForm a {
+	position: relative;
+    height: auto;
+    margin-left: -1px;
+    color: #666;
+    text-indent: 0;
+    background: url(/Melon/img/notice/bg_paginate.png) no-repeat 0 4px;
+    display: inline-block;
+    padding: 5px 7px 3px;
+    width: auto;
+    height: auto;
+    min-width: 18px;
+    font-weight: bold;
+}
+
+.write-btn {
+	position: absolute;
+	right: 0;
+	top: 55px;
+}
+
+.write-btn a {
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	font-weight: 700;
+}

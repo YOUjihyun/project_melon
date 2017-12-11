@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+#readWrapper {
+	margin: 0;
+	padding: 0;
+}
+
+.read-conts {
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1008px;
+    padding: 52px 0 65px;
+}
+
+.customCenter {
+	color: #1a1a1a;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","돋움",Dotum,"Apple Gothic",sans-serif;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.conts_tab {
+    position: relative;
+    background-color: #ebf0ed;
+}
+
+.conts_tab ul {
+	position: relative;
+    width: 1008px;
+    border-top: 2px solid #848484;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.conts_tab ul li {
+    float: left;
+    background-color: #ebf0ed;
+}
+
+.conts_tab ul li:first-child {
+	margin-left: -1px;
+}
+
+.link_tab {
+	display: block;
+    position: relative;
+    width: 192px;
+    min-height: 16px;
+    padding: 10px 4px;
+    border-bottom: 0;
+    color: #333;
+    font-size: 12px;
+    line-height: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #d9d9d9;
+}
+
+.conts_tab ul li:nth-child(2) .link_tab {
+    width: 191px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    color: #6ea300;
+    font-weight: bold;
+}
+
+.read-table {
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1008px;
+    min-height: 300px;
+    padding-bottom: 88px;
+	border-top: 2px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.read-table > table {
+	border-collapse: collapse;
+	position: relative;
+	width: 100%;
+}
+
+.read-table > table tr th {
+	height: 33px;
+    color: #333;
+    vertical-align: middle;
+    border-bottom: 1px solid #cfcfcf;
+    background-color: #fafafa;
+}
+
+.wrap {
+	height: 16px;
+    position: relative;
+    padding: 11px 23px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.wrap.cate {
+	display: inline-block;
+	width: 74px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dtl {
+	padding: 21px 16px 36px;
+}
+
+.listBtn {
+	padding-top: 20px;
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1008px;
+    padding-bottom: 88px;
+    text-align: right;
+}
+
+.listBtn a {
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	font-weight: 700;
+}
+
+
+

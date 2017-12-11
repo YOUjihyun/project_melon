@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ReplyDao">
+
+	<select id="selectMagazineAllReply" parameterType="ReplyVO" resultType="map">
+		SELECT	REPLY_ID
+				, REPLY_CONTENT
+				, REPLY_DATE
+				, REPLY_LIKE_COUNT
+				, REPLY_DISLIKE_COUNT
+				, ID
+				, MAGAZINE_ID
+				, CATEGORY_ID
+		FROM	REPLY R
+				, MEMBER U
+				, MAGAZINE M
+		WHERE	R.ID = U.ID
+		AND		R.MAGAZINE_ID = M.MAGAZINE_ID
+		AND		R.REPLY_ID = #{replyId}
+		AND		R.CATEGORY_ID = #{categoryId}
+		ORDER	BY REPLY_ID DESC
+	</select>
+	
+	<insert id="insertMagazineNewReply" parameterType="ReplyVO">
+		INSERT 	INTO REPLY  (
+								REPLY_ID
+								, REPLY_CONTENT
+								, REPLY_DATE
+								, REPLY_LIKE_COUNT
+								, REPLY_DISLIKE_COUNT
+								, PARENT_ID
+								, ID
+								, MAGAZINE_ID
+								, CATEGORY_ID							
+						    )
+		VALUES				(
+								REPLY_ID_SEQ.NEXTVAL
+								, #{content}
+								, SYSDATE
+								, #{replyLikeCount}	
+								, #{replyDislikeCount}
+								, #{parentId}
+								, #{id}
+								, #{magazineId}
+								, #{categoryId}
+							)
+	</insert>
+	
+	<update id="updateLikeCount" parameterType="ReplyVO">
+		UPDATE	REPLY
+		SET		REPLY_LIKE_COUNT = REPLY_LIKE_COUNT + 1
+		WHERE	MAGAZINE_ID = #{magazineId}
+		AND		CATEGORY_ID = #{categoryId}
+		AND		ID = #{id}
+	</update>
+	
+ 	<update id="updateReply" parameterType="ReplyVO">
+		UPDATE	REPLY
+		SET		REPLY_CONTENT = #{replyContent}
+		WHERE	MAGAZINE_ID = #{magazineId}
+		AND		CATEGORY_ID = #{categoryId}
+		AND		ID = #{id}
+	</update>
+	
+	<delete id="deleteReply" parameterType="ReplyVO">
+		DELETE 	
+		FROM 	REPLY
+		WHERE	REPLY_ID = #{replyId}
+		AND		ID = #{id}
+		AND		MAGAZINE_ID = #{magazineId}
+		AND		CATEGORY_ID = #{categoryId}
+	</delete>
+	
+
+</mapper>

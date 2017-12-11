@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MagazineDao">
+
+	<select id="selectAllMagazine" parameterType="MagazineVO" resultType="map">
+		SELECT	MAGAZINE_ID
+  				, MAGAZINE_SUBJECT
+				, TO_CHAR(MAGAZINE_DATE, 'YYYY.MM.DD') MAGAZINE_DATE
+				, TO_CHAR(SUBSTR(MAGAZINE_CONTENT, 0)) MAGAZINE_CONTENT
+				, MAGAZINE_LIKE_COUNT
+				, MAGAZINE_VIEW_COUNT
+				, MAGAZINE_PHOTO
+				, ID
+				, CATEGORY_ID
+		FROM	MAGAZINE
+		ORDER	BY MAGAZINE_ID DESC
+	</select>
+	
+	<select id="selectAllMagazineCount" parameterType="MagazineVO" resultType="_int">
+		SELECT	COUNT(1)
+		FROM	MAGAZINE
+	</select>
+	
+	<select id="selectOneMagazine" parameterType="MagazineVO" resultType="MagazineVO">
+		SELECT	MAGAZINE_ID magazineId
+  				, MAGAZINE_SUBJECT magazineSubject
+				, MAGAZINE_DATE magazineDate
+				, MAGAZINE_CONTENT magazineContent
+				, MAGAZINE_LIKE_COUNT magazineLikeCount
+				, MAGAZINE_VIEW_COUNT magazineViewCount
+				, MAGAZINE_PHOTO magazinePhoto
+				, ID id
+				, CATEGORY_ID categoryId
+		FROM	MAGAZINE
+		WHERE	MAGAZINE_ID = #{magazineId}
+		AND		CATEGORY_ID = #{categoryId}
+	</select>
+	
+	<select id="selectMainMagazine" resultType="map">
+		SELECT	A.*
+		FROM	(
+				SELECT	MAGAZINE_ID
+						, MAGAZINE_SUBJECT
+						, MAGAZINE_DATE
+						, TO_CHAR(SUBSTR(MAGAZINE_CONTENT, 0)) MAGAZINE_CONTENT
+						, MAGAZINE_LIKE_COUNT
+						, MAGAZINE_VIEW_COUNT
+						, MAGAZINE_PHOTO
+						, ID
+						, CATEGORY_ID
+				FROM	MAGAZINE
+				ORDER	BY MAGAZINE_LIKE_COUNT DESC
+						, MAGAZINE_ID DESC
+				) A
+		WHERE	ROWNUM <![CDATA[<=]]> 12
+	</select>
+	
+	<update id="updateViewCount" parameterType="MagazineVO">
+		UPDATE	MAGAZINE
+		SET		MAGAZINE_VIEW_COUNT = MAGAZINE_VIEW_COUNT + 1
+		WHERE	MAGAZINE_ID = #{magazineId}
+		AND		CATEGORY_ID = #{categoryId}
+	</update>
+	
+	<update id="updateLikeCount" parameterType="MagazineVO">
+		UPDATE	MAGAZINE
+		SET		MAGAZINE_LIKE_COUNT = MAGAZINE_LIKE_COUNT + 1
+		WHERE	MAGAZINE_ID = #{magazineId}
+	</update>
+	
+ 	<update id="updateMagazine" parameterType="MagazineVO">
+		UPDATE	MAGAZINE
+		SET		MAGAZINE_SUBJECT = #{magazineSubject}
+				, MAGAZINE_CONTENT = #{magazineContent}
+		WHERE	MAGAZINE_ID = #{magazineId}
+		AND		CATEGORY_ID = #{categoryId}
+		AND		ID = #{memberId}
+	</update>
+	
+	<delete id="deleteMagazine" parameterType="MagazineVO">
+		DELETE 	
+		FROM 	MAGAZINE
+		WHERE	MAGAZINE_ID = #{magazineId}
+		AND		ID = #{memberId}
+	</delete>
+	
+	
+		<insert id="insertNewMagazine" parameterType="MagazineVO">
+		INSERT INTO MAGAZINE(
+		                        MAGAZINE_ID
+		                        , MAGAZINE_SUBJECT
+		                        , MAGAZINE_DATE
+		                        , MAGAZINE_CONTENT
+		                        , MAGAZINE_LIKE_COUNT
+		                        , MAGAZINE_VIEW_COUNT
+		                        , MAGAZINE_PHOTO
+		                        , ID
+		                        , CATEGORY_ID
+		                    )
+		VALUES              (
+		                        MAGAZINE_ID_SEQ.NEXTVAL
+		                        , #{magazineSubject}
+		                        , SYSDATE
+		                        , #{magazineContent}
+		                        , 0
+		                        , 0
+		                        , 'lim.png'
+		                        , 'admin'
+		                        , #{categoryId}
+		                    )
+	</insert>
+	
+	<select id="selectAllMagazineByCategoryId" parameterType="MagazineVO" resultType="map">
+		SELECT	MAGAZINE_ID
+  				, MAGAZINE_SUBJECT
+				, TO_CHAR(MAGAZINE_DATE, 'YYYY.MM.DD') MAGAZINE_DATE
+				, TO_CHAR(SUBSTR(MAGAZINE_CONTENT, 0)) MAGAZINE_CONTENT
+				, MAGAZINE_LIKE_COUNT
+				, MAGAZINE_VIEW_COUNT
+				, MAGAZINE_PHOTO
+				, ID
+				, CATEGORY_ID
+		FROM	MAGAZINE
+		WHERE	CATEGORY_ID = #{categoryId}
+		ORDER	BY MAGAZINE_ID DESC
+	</select>
+	
+</mapper>

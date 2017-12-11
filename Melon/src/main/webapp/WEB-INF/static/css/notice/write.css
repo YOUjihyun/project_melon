@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#writeWrapper {
+	margin: 0;
+	padding: 0;
+}
+
+.write-conts {
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1008px;
+    padding: 52px 0 65px;
+}
+
+.write-conts table {
+	position: relative;
+	width: 100%;
+}
+
+.write-conts table tr td {
+	vertical-align: middle;
+}
+
+#classifyOption {
+	display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 27px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+#subject {
+	width: 400px;
+	height: 21px;
+	margin-left: 10px;
+}
+
+.writeContent {
+	margin-top: 20px;
+}
+
+#writeSubmitBtn {
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	font-weight: 700;
+	background: 0;
+	margin-top: 10px;
+}

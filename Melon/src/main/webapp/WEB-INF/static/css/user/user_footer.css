@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+#member_footer {
+    width: 562px;
+    margin: 42px auto 0;
+    padding-bottom: 42px;
+    text-align: center;
+}
+
+#member_footer ul {
+	list-style: none;
+}
+
+.footer_policy {
+    overflow: hidden;
+    width: 449px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clfix {
+    display: block;
+}
+
+.clfix a:hover {
+	text-decoration: underline;
+}
+
+.footer_policy li.first_child {
+    margin-left: 0;
+    padding-left: 0;
+    background: 0;
+}
+
+.footer_policy li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 3px;
+    font-size: 13px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #767676;
+}
+
+.footer_policy li {
+    float: left;
+    margin-left: 21px;
+    padding-left: 21px;
+    background: url(/Melon/img/user/login/bl_footer_line.png) 0 5px no-repeat;
+}
+
+#member_footer .footer_menu {
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+#member_footer .footer_menu li {
+    display: inline;
+    padding: 0 10px 0 14px;
+    background: url(https://cdnimg.melon.co.kr/resource/image/web/member/bl_footer_line.png) 0 0 no-repeat;
+}
+
+#member_footer .footer_menu li.first {
+    background: 0;
+    padding: 0 10px 0 0;
+}
+
+#member_footer .footer_menu li a {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#member_footer .footer_menu li.menu01 a {
+    margin-left: 0;
+}
+
+#member_footer .footer_menu .menu01 a span {
+    display: block;
+    height: 17px;
+    font-size: 0;
+    line-height: 0;
+    width: 70px;
+    background: url(/Melon/img/user/login/footer_menu_161122.png) no-repeat;
+    background-position: 0 0;
+}
+
+#member_footer .footer_menu .menu01 a span:hover {
+	background: url(/Melon/img/user/login/footer_menu_161122.png) no-repeat;
+    background-position: -95px 0;
+}
+
+#member_footer .footer_menu .menu04 a span {
+    display: block;
+    height: 17px;
+    font-size: 0;
+    line-height: 0;
+    width: 45px;
+    background: url(/Melon/img/user/login/footer_menu_161122.png) no-repeat;
+    background-position: 0 -52px;
+}
+
+#member_footer .footer_menu .menu04 a span:hover {
+	background: url(/Melon/img/user/login/footer_menu_161122.png) no-repeat;
+    background-position: -95px -52px;
+}
+
+#member_footer p {
+    margin-top: 21px;
+    font-size: 11px;
+    color: #969696;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+}
+
+#member_footer .footer_menu li.txt {
+    margin-right: 12px;
+    color: #969696;
+}

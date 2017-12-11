@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+.inline {
+	display: inline-block;
+}
+
+.right {
+	text-align: right;
+	position: absolute;
+	right: 0;
+}
+.name_attention {
+	display: none;
+	padding: 8px 0 0;
+	font-size: 14px; 
+	line-height: 23px;
+    margin-left: 120px; 
+	color: #333;
+	word-break:break-all;
+	word-wrap:break-word;
+	width: 281px;
+	position: relative;
+	color: red;
+}
+.attention{
+    padding-left: 113px;
+    font-size: 14px;
+    line-height: 23px;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+    letter-spacing: -1px;
+    display: none;
+}
+
+.disappear {
+	display: none;
+}
+
+#join_wrapper {
+	margin: 0;
+	padding: 0;
+	
+}
+
+#join_wrapper #top_line {
+	border: 1px solid #00cd3c;
+}
+
+#gnb {
+	position: relative;
+	border: 1px solid #fff;
+	padding-bottom: 30px;
+    width: 550px;
+    margin: 0 auto;
+   /* padding: 68px 0 42px;*/
+    z-index: 20;
+    text-align: center;
+	border: 1px solid #fff;
+	/*padding-bottom: 30px;*/
+}
+
+#member_header {
+	margin: 0 auto;
+	width: 1008px;
+	margin-top: 68px;
+	margin-bottom:
+}
+
+#member_header #gnb > h1 {
+	text-align: center;
+
+}
+
+.join_box {
+	margin: 0 auto;
+	width: 550px;
+	border: 1px solid #e1e1e1;
+}
+
+.join_box > h2 {
+	padding-top: 35px;
+	font-size: 32px;
+	font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+	text-align: center;
+	font-weight: normal;
+	color: #333;
+	letter-spacing: -3px;
+}
+
+.join_p_text {
+	padding-top: 40px;
+	font-size: 16px;
+	color: #333;
+	font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+	line-height: 36px;
+	letter-spacing: -1px;
+	text-align: left;
+}
+
+.join_phonAndname_box {
+	position: relative;
+	display: block;
+	height: 77px;
+	text-align: left;
+}
+
+.phone_number {
+	display: inline-block;
+	padding-top: 27px;
+	font-size: 17px;
+    color: #333;
+}
+
+.input_phone_number {
+	width: 278px;
+	display: inline-block;
+	padding-left: 14px;
+	padding-right: 16px;
+	right: 50px;
+	margin-left:23px;
+	border: 1px solid #e9e9e9;
+	border-radius: 7px;
+}
+
+#ph_number {
+	width: 250px;
+/* 	background-color: rgb(250,255,189); */
+	height: 30px;
+	border: none;
+	margin-left: -3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+#new_name {
+	width: 250px;
+	height: 30px;
+	border: none;
+	margin-left: -3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+.name_box{
+	position: relative;
+	display: block;
+	height: 77px;
+	text-align: left;
+}
+#assigned_btn{
+	width: 269px;
+	height: 30px;
+	border: none;
+	margin: 10px 0;
+	color: #00b423;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.join_assined_blank{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	padding-top: 27px;
+    color: #00ff40;
+}
+.assigned{
+	position: relative;
+	display: none;
+	height: 77px;
+}
+
+.join_name{
+	display: inline-block;
+	padding-top: 27px;
+	font-size: 17px;
+    color: #333;
+}
+.input_name{
+	width: 281px;
+	display: inline-block;
+	padding-left: 16px;
+	padding-right: 11px;
+	right: 50px;
+	margin-left:74px;
+	border: 1px solid #e9e9e9;
+	border-radius: 7px;
+}
+
+.upper_block {
+	width: 548px;
+	padding: 0 66px 34px;
+}
+
+.input_assigned{
+	
+}
+
+.input_assigned #assigned_btn{
+	width: 297px;
+	height:46px;
+	border: 1px solid #00cd3c;
+	border-radius: 50px;
+	background: #fff;
+	margin-left: 120px;
+}
+
+.arrow_bottom{
+	display: inline-block;
+    width: 20px;
+    height: 7px;
+    padding: 8px;
+    background: url(/Melon/img/user/join/btn_caluse_more.png) 10px 10px no-repeat;
+    vertical-align: top;
+}
+.input_check1 {
+	border-bottom: 1px solid red;
+
+}
+.bottom_check{
+	
+}
+
+.assigned{
+/* 	display: none; */
+}
+
+ul{
+	list-style: none;
+}
+.bottom_check{
+
+}
+
+.botton_box{
+	position: relative;
+    margin-top: 18px;
+}
+
+.box-check {
+	width: 430px;
+	height: 45px;
+	position: relative;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+
+.box-check label {
+	width: 100%;
+}
+
+.each_box-check{
+	width: 430px;
+	height: 45px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.botton_box #agree_check1 {
+	/*
+	position: absolute;
+    left: 0;
+    top: 0;
+    */
+    width: 0px;
+    height: 0px;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+    z-index: -1;
+}
+
+.botton_box #agree_check2 {
+	/*
+	position: absolute;
+    left: 0;
+    top: 0;
+    */
+    width: 0px;
+    height: 0px;
+    border: 0;
+    margin: 2px 1px;
+    
+    padding: 0;
+    vertical-align: top;
+    z-index: -1;
+}
+.botton_box #agree_check3 {
+	/*
+	position: absolute;
+    left: 0;
+    top: 0;
+    */
+    width: 0px;
+    height: 0px;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+    z-index: -1;
+}
+.botton_box #agree_check4 {
+	/*
+	position: absolute;
+    left: 0;
+    top: 0;
+    */
+    width: 0px;
+    height: 0px;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+    z-index: -1;
+}
+.botton_box #agree_check5 {
+	/*
+	position: absolute;
+    left: 0;
+    top: 0;
+    */
+    width: 0px;
+    height: 0px;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+    z-index: -1;
+    border: 1px solid #ddd;
+}
+
+
+.botton_box .icon {
+	display: block;
+	/*
+    position: absolute;
+    left: 0;
+    top: 2px;
+    */
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    height: 23px;
+    line-height: 18px;
+    background: url(/Melon/img/user/join/bg_checkbox.png) no-repeat;
+}
+/* .botton_box .icon2{ */
+/* 		display: block; */
+/*     position: absolute; */
+/*     left: 0; */
+/*     top: 7px; */
+/*     width: 23px; */
+/*     height: 23px; */
+/*     background: url(/Melon/img/user/join/bg_checkbox.png) no-repeat; */
+/* } */
+
+.botton_box .box-check label {
+	float: left;
+    height: 23px;
+    color: #333;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    cursor: pointer;
+    line-height: 23px;
+    letter-spacing: -1px;
+}
+.botton_box .each_box-check label {
+	float: left;
+    height: 23px;
+    color: #333;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    cursor: pointer;
+    line-height: 0px;
+    letter-spacing: -1px;
+}
+
+.buttom_button{
+	text-align: center;
+}
+.buttom_button a{
+	text-decoration: none;
+}
+.next_button{
+	display: inline-block;
+	min-width: 267px;
+	padding: 17px 0 21px;
+	background-color: #00cd3c;
+	font-size: 20px;
+	font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+	text-align: center;
+	color: #fff;
+	line-height: 28px;
+	margin-top: 34px;
+	margin-bottom: 42px;
+}
+
+
+.supper_block{
+border-top: 1px solid #ddd;
+}
+
+.join_clause_content{
+	border: 1px solid #ddd;
+	border-radius: 7px;
+	overflow: auto;
+	width: 422px;
+	height: 130px;
+	
+}
+
+.hidden_info{
+	margin-left: 91px;
+}
+#all_contents1{
+	padding-right: 13px;
+	color: #7d7d7d;
+	font-size: 14px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    text-decoration: none;
+    background: url(/Melon/img/user/join/btn_caluse_more.png) 61px -31px no-repeat
+}
+#all_contents2{
+	padding-right: 13px;
+	color: #7d7d7d;
+	font-size: 14px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    text-decoration: none;
+    background: url(/Melon/img/user/join/btn_caluse_more.png) 61px -31px no-repeat
+}
+#all_contents3{
+	padding-right: 13px;
+	color: #7d7d7d;
+	font-size: 14px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    text-decoration: none;
+    background: url(/Melon/img/user/join/btn_caluse_more.png) 61px -31px no-repeat
+}
+ .gray_label{ 
+	display: inline-block; 
+    padding-left: 4px; 
+    font-size: 14px; 
+    color: #7d7d7d; 
+}
+
+.term {
+	display: none;
+}
+
+.yellowgreen_label{ 
+	display:inline-block;
+	padding-left: 4px;
+	font-size:14px;
+    color: #00b423;
+}
+.under_arrow {
+	position:absolute;
+	top: 0;
+	z-index : 1;
+}
+.content_arrow {
+	
+}
+.x_box {
+	margin-left: 6px; 
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+	background: url(/Melon/img/user/join/btn_input_check.png) no-repeat;
+	margin-bottom: -6px;
+}
+
+#receivenumber_box > p {
+	font-size: 16px;
+    color: #333;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+
+.hideX {
+	display: none;
+}

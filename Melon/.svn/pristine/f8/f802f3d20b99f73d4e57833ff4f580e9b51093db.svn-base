@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+#searchWarpper {
+	margin: 0 auto;
+	padding: 0;
+	width: 1008px;
+    min-height: 600px;
+}
+
+.search_phrse {
+    padding: 29px 0 8px;
+}
+
+.section_no_data {
+    padding: 52px 0 30px 0;
+}
+
+.t_center {
+    text-align: center;
+}
+
+.section_no_data .text_emphs {
+    margin-bottom: 7px;
+    color: #1a1a1a;
+    font-family: "맑은 고딕","Malgun Gothic","돋움","Dotum", "Apple Gothic", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.fc_point {
+    color: #7cb710 !important;
+}
+
+.section_no_data .list_bullet {
+    margin: 26px 0 0 276px;
+}
+
+.section_no_data .list_bullet li {
+    margin-top: 4px;
+    color: #666;
+}
+
+.list_bullet li {
+    margin-top: 6px;
+    padding-left: 9px;
+    background: url(/Melon/img/main/login/bg_list_bullet.png) no-repeat left 6px;
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 1.4em;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.search_phrse p {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+}
+
+.fc_serch {
+    color: #7cb710 !important;
+    text-decoration: underline !important;
+    text-decoration: none !important;
+}
+
+h3.first {
+	margin-top: 25px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+}
+
+.artist-info {
+	display: block;
+    padding: 16px 0 16px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.artist-info table tr td {
+	height: 25px;
+}
+
+.artist-img {
+	display: inline-block;
+	width: 209px;
+	height: 209px;
+}
+
+.artist-info ul {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 24px;
+	position: relative;
+	width: 769px;
+}
+
+.artist-name {
+	position: relative;
+    margin-top: -6px;
+    padding-top: 1px;
+    height: 37px;
+    line-height: 30px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.artist-name a {
+	color: #7cb710 !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+}
+
+.artist-info ul li table {
+	margin-top: 20px;
+}
+
+
+
+.section_song {
+	clear: both;
+	display: block;
+	margin-top: 20px;
+	position: relative;
+}
+
+.section_song table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-bottom: 1px solid #ccc;
+}
+
+.section_song table tr th {
+    height: 26px;
+    border-bottom: 2px solid #80ba00;
+    color: #8ca456;
+    font-family: "돋움", "Dotum", "Apple Gothic", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.section_song table tr td {
+	height: 39px;
+    border-top: 1px solid #e6e6e6;
+    line-height: 1.2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.no {
+	color: #666;
+    font-size: 14px;
+    font-family: "Arial", "돋움", "Dotum", serif;
+}
+
+.song_name_list {
+	text-align: left;
+}
+
+.playBtn {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+    background: url(/Melon/img/search/bg_sprite_green.png) no-repeat -168px top;
+}
+
+.addBtn {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+    background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat -308px top;
+}
+
+.txtBtn {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+    background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat -526px top;
+    overflow: hidden;
+    line-height: 19px;
+    margin: 0 6px 0 10px;
+}
+
+.song_title {
+	display: inline-block;
+	height: 17px;
+	width: 345px;
+	overflow: hidden;
+    line-height: 19px;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.song_title:hover {
+	text-decoration: underline;
+}
+
+.artist_div {
+	overflow: hidden;
+	text-overflow: ellipsis;
+    color: #7cb710;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.album_name_div {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.like_div {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.likeImg {
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+	background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat left top;
+}
+
+.likeCount {
+    width: auto;
+    height: auto;
+    background: none !important;
+    overflow: visible;
+    color: #666;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "돋움","dotum", "Apple Gothic",sans-serif;
+    vertical-align: middle;
+    text-indent: 0;
+}
+
+.mv a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat -224px top;
+}
+
+.download a {
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat -84px top;
+}
+
+.ringbell a {
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat -252px top;
+}
+
+.btn-wrap {
+	border-bottom: 1px solid #ccc;
+	padding: 7px 0;
+}
+
+.btn-wrap button {
+	background: 0;
+	border: 1px solid #ccc;
+	color: #333;
+    font-size: 11px;
+    font-family: "Dotum", "돋음", "Apple Gothic", sans-serif;
+    letter-spacing: -1px;
+    height: 24px;
+}
+
+.btn-wrap button:first-child span {
+	background: url(/Melon/img/search/bg_btn_base.png) no-repeat -1px -1291px;
+	padding-left: 21px;
+}
+
+.btn-wrap button:nth-child(2) span {
+    padding-left: 19px;
+    background: url(/Melon/img/search/bg_btn_base.png) no-repeat -2px -1323px;
+}
+
+.btn-wrap button:nth-child(3) span {
+    padding-left: 19px;
+    background: url(/Melon/img/search/bg_btn_base.png) no-repeat -2px -1355px;
+}
+
+.btn-wrap button:nth-child(4) span {
+    padding-left: 19px;
+    background: url(/Melon/img/search/bg_btn_base.png) no-repeat -2px -1385px;
+}
+
+.btn-wrap button:nth-child(5) span {
+    padding-left: 19px;
+    background: url(/Melon/img/search/bg_btn_base.png) no-repeat -2px -1416px;
+}
+
+#mvWrapper {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	width: 560px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+}
+
+#mvWrapper h1 {
+	color: #00cd3c;
+	padding: 15px 0 15px 15px;;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+#mvWrapper #mv_btn_close {
+	position: absolute;
+    right: 16px;
+    top: 16px;
+    border: 0;
+    background: 0;
+}
+
+#mvWrapper #mv_btn_close span {
+	display: inline-block;
+	width: 21px;
+    height: 21px;
+    background: url(/Melon/img/user/login/btn_close_login.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.txtWrapper {
+	position: absolute;
+	display: none;
+	width: 500px;
+	height: 0px;
+	top: 350px;
+	left: 420px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+	color: #333;
+}
+
+.txtWrapper h1 {
+	color: #00cd3c;
+	padding: 15px 0 15px 50px;;
+	font-size: 17px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.txtWrapper .song_lyrics {
+	width: 400px;
+	height: 400px;
+	margin: 10px 50px;
+	overflow: auto;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	word-break:break-all;
+	line-height: 25px;
+}
+

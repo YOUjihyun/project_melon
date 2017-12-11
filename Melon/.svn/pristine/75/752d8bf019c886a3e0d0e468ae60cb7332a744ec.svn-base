@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+#join_wrapper {
+	margin: 0 auto;
+	margin-top: 25px;
+	padding: 0;
+}
+
+#join_wrapper #top_line {
+	border: 1px solid #00cd3c;
+}
+
+#member_header {
+	margin: 0 auto;
+	width: 1008px;
+	margin-top: 68px;
+	margin-bottom:
+}
+
+#member_header #gnb > h1 {
+	text-align: center;
+
+}
+
+.list_bullet {
+	list-style-type: disc;
+	line-height: 20px;
+	vertical-align: middle;
+}
+	
+.titlePw {
+	color: #1a1a1a;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","돋움","Dotum","Apple Gothic",sans-serif;
+    letter-spacing: -2px;
+}
+.content {
+	width: 1008px; 
+    margin: 0 auto; 
+    padding:0;
+}
+
+.add_info_mem {
+	margin-top: 24px;
+    padding: 21px 38px 23px 22px;
+    border: 1px solid #e6e6e6;
+    border-right: 0;
+    border-left: 0;
+
+}
+.myInfo_box {
+	position: relative;
+    padding: 39px 19px 38px;
+    border: 1px solid #d9d9d9;
+    margin-top: 20px;
+    text-align: center;
+}
+.my_info_mem dt{
+	display: inline-block;
+    margin-right: 8px;
+    margin-left: 47px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.my_info_mem dd{
+    display: inline-block;
+    margin-right: 48px;
+    margin-left: 9px;
+    vertical-align: middle;
+}
+
+#memberPwd {
+	height: 29px;
+    padding: 0 7px;
+    font-size: 12px;
+    line-height: 29px;
+}
+
+.btn_check {
+	margin-top: 30px;
+	margin-bottom: 88px;
+	text-align: center;
+}
+
+.btn_check button {
+	cursor: pointer;
+	width: 120px;
+	height: 44px;
+	font-family: "Malgun Gothic","맑은 고딕",dotum,"돋움","Apple Gothic",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+	border-radius: 25px;
+}
+
+.green_btn {
+	background: yellowgreen;
+	color: #fff;
+	border: none;
+}
+
+.white_btn {
+	background: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+}
+.btn_pw_view {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 45px;
+    right: 262px;
+    margin-left: 12px;
+    background: url(/Melon/img/user/join/btn_pw_view02.png) no-repeat;
+    vertical-align: top;
+    text-indent: -9999px;
+}

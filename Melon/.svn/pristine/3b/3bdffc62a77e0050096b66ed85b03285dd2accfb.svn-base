@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+#findWrapper {
+	margin: 0;
+	padding: 0;
+}
+
+#top-line {
+	margin: 0;
+	padding: 0;
+	border: 1.5px solid #00cd3c;
+}
+
+.find-logo {
+    position: relative;
+    width: 550px;
+    margin: 0 auto;
+    padding: 68px 0 42px;
+    z-index: 20;
+    text-align: center;
+}
+
+.find-cont-wrap {
+	width: 550px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cont-section {
+	position: relative;
+    margin: 0 auto;
+    width: auto !important;
+}
+
+.section-tab {
+	display: block;
+	height: 72px;
+}
+
+.section-tab ul {
+	list-style: none;
+}
+
+.section-tab ul li {
+	float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.section-tab ul li a {
+    display: inline-block;
+    padding: 14px 7px 21px;
+    color: #575757;
+    font-size: 26px;
+    line-height: 34px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    letter-spacing: -2px;
+    text-decoration: none;
+}
+
+.section-tab ul li:first-child a {
+	color: #00b423;
+    border-bottom: 3px solid #00cd3c;
+}
+
+
+/* 아이디 찾기 */
+.section-body {
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    padding: 0 58px;
+    position: relative;
+}
+
+.box_check_radio {
+	margin-top: 50px;
+	position: relative;
+}
+
+#emailCheckBtn {
+	position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+}
+
+.next-join {
+	margin-top: 30px;
+    padding-top: 28px;
+    border-top: 1px solid #e9e9e9;
+}
+
+.box_check_radio label {
+	float: left;
+    min-height: 30px;
+    padding-left: 31px;
+    color: #333;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    cursor: pointer;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+
+.box_check_radio label span {
+	display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: url(/Melon/img/user/find/bg_radio20.png) no-repeat 0 -20px;
+}
+
+.user-info {
+	clear: both;
+	display: block;
+    padding-top: 8px;
+    font-size: 16px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 26px;
+    color: #575757;
+    letter-spacing: -1px;
+}
+
+.user-info > table, .pw-info > table {
+	margin-top: 6px;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.user-info > table tr td {
+	padding-top: 27px;
+	color: #000;
+}
+
+.user-info > table tr:last-child td {
+	padding-top: 5px;
+}
+
+.input_box {
+	width: 311px;
+	height: 53px;
+	line-height: 53px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	position: relative;
+}
+
+.user-info > table tr td p {
+	padding: 9px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+    color: #eb4100;
+    letter-spacing: -1px;
+}
+
+#name, #email, #id, #pwName {
+	margin-left: 10px;
+	width: 256px;
+	height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    border: none;
+    box-shadow: none;
+    color: #333;
+}
+
+.auth button {
+	width: 130px;
+	height: 32px;
+	line-height: 32px;
+	background: #fff;
+	border: 1px solid #00cd3c;
+	border-radius: 25px;
+	color: #00b423;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-join > p {
+    color: #7d7d7d;
+    font-size: 14px;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+    letter-spacing: -1px;
+}
+
+.next-join > p a {
+	display: inline-block;
+    position: relative;
+    margin-left: 12px;
+    color: #7d7d7d;
+    text-decoration: underline;
+}
+
+.next-join-btn {
+	margin: 40px 0 !important;
+	text-align: center;
+}
+
+.next-join-btn a {
+	display: inline-block;
+    min-width: 264px;
+    padding: 17px 0 21px;
+    background-color: #00cd3c;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none;
+}
+
+.x-box {
+	display: none;
+	position: absolute;
+    right: 13px;
+    top: 13px;
+	width: 21px;
+    height: 21px;
+    margin-top: 4px;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 27px;
+    color: #575757;
+    text-decoration: underline;
+    letter-spacing: -1px;
+    background: url(/Melon/img/user/find/btn_input_check.png) no-repeat;
+    cursor: pointer;
+}
+
+.pw-body {
+	border: 1px solid #e1e1e1;
+    background-color: #fff;
+    padding: 0 58px;
+    position: relative;
+}
+
+.pw-body > p {
+	margin-top: 52px;
+    font-size: 18px;
+    color: #333;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.pw-info {
+	margin-top: 8px;
+}
+
+.pw-info > table {
+	clear: both;
+	display: block;
+    padding-top: 8px;
+    font-size: 16px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 26px;
+    color: #575757;
+    letter-spacing: -1px;
+}
+
+.pw-info > table tr td {
+	padding-top: 27px;
+	color: #000;
+}
+
+.pw-info > table tr td p {
+	padding: 9px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+    color: #eb4100;
+    letter-spacing: -1px;
+}
+
+.pw-bullet {
+    margin-top: 26px;
+    padding-top: 21px;
+    border-top: 1px solid #e9e9e9;
+}
+
+.pw-bullet ul {
+	list-style: none;
+}
+
+.pw-bullet ul li {
+	font-size: 14px;
+    color: #7c7c7c;
+    font-family: "Malgun Gothic","맑은 고딕",dotum,"돋움","Apple Gothic",sans-serif;
+    line-height: 20px;
+    background: url(/Melon/img/user/find/bl_list05.png) 1px 10px no-repeat;
+    letter-spacing: -1px;
+    padding-left: 13px;
+}
+
+.singKey_check {
+	display: none;
+}
+
+p#emailSignKey_info {
+	padding: 9px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+    color: #333;
+    letter-spacing: -1px;
+}
+
+#emailSignKey_tr {
+	width: 311px;
+	height: 53px;
+	border-radius: 7px;
+}
+
+#emailSignKey {
+	width: 256px;
+	height: 30px;
+	font-size: 17px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    border: none !important;
+    box-shadow: none;
+    color: #333;
+    margin: 10px 0 0 10px;
+}
+
+
+
+
+

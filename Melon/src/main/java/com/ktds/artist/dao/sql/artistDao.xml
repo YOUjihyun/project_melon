@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="ArtistDao">
+  	<!-- <resultMap type="ChartVO" id="ChartVOMap">
+		<id column="MUSIC_ID" property="musicId" />
+		<result column="MUSIC_SUBJECT" property="musicSubject" />
+		<result column="ALBUM_SUBJECT" property="albumSubject" />
+		<result column="ALBUM_POSTER" property="albumPoster" />
+		<result column="LIKE_COUNT" property="likeCount" />
+		<result column="MUSIC_FILE_NAME" property="musicFileName" />
+		<result column="MV_NAME" property="mvName" />
+		<result column="LYRICS" property="lyrics" />
+		<result column="ISSUE_DATE" property="issueDate" />
+		<result column="GENRE" property="genre" />
+		<result column="WRITER" property="writer" />
+		<result column="COMPOSER" property="composer" />
+		<result column="MAGAZINE_ID" property="magazineId" />
+		<result column="ID" property="id" />
+		<result column="ARTIST_ID" property="artistId" />
+		<result column="SUBTITLE" property="subtitle" />
+		
+		
+		<association property="artistVO" javaType="ArtistVO">
+			<id column="ARTIST_ID" property="artistId" />
+			<result column="ARTIST_NAME" property="artistName" />
+			<result column="NATIONALITY" property="nationality" />
+			<result column="ACTIVITY_TYPE" property="activityType" />
+			<result column="ACTIVITY_GENERATION" property="activityGeneration" />
+			<result column="ACTIVITY_GENRE" property="activityGenre" />
+			<result column="DEBUT_SONG" property="debutSong" />
+			<result column="ARTIST_BIRTHDAY" property="artistBirthday" />
+			<result column="MAGAZINE_ID" property="magazineId" />
+		</association>
+	</resultMap> -->
+  
+	<select id="selectOneArtist" resultType="ArtistVO" parameterType="_int">
+  		SELECT	ARTIST_ID artistId
+				,	ARTIST_NAME artistName
+				,   NATIONALITY nationality
+                ,   ACTIVITY_TYPE activityType
+                ,   ACTIVITY_GENERATION activityGeneration
+                ,   ACTIVITY_GENRE activityGenre
+                ,   DEBUT_SONG debutSong
+                ,   ARTIST_BIRTHDAY artistBirthday
+                ,   MAGAZINE_ID magazineId
+                ,	ID id
+                ,	ARTIST_IMAGE artistImage
+  		FROM	ARTIST
+  		WHERE	ARTIST_ID = #{artistId}
+	</select>
+	
+	<!-- <select id="selectAllMusicOfOneArtist" resultMap="ChartVOMap" parameterType="_int">
+		SELECT	MUSIC_ID
+  				,	MUSIC_SUBJECT
+  				,	ALBUM_SUBJECT
+  				,	ALBUM_POSTER
+				,	LIKE_COUNT
+				,	MUSIC_FILE_NAME
+				,	MV_NAME
+				,	LYRICS
+				,	ISSUE_DATE
+				,	GENRE
+				,	WRITER
+				,	COMPOSER
+				,	M.MAGAZINE_ID
+                ,   M.ID
+                ,   M.ARTIST_ID
+                ,	A.ARTIST_NAME
+		FROM	MUSIC M
+				,	ARTIST A
+		WHERE	M.ARTIST_ID = A.ARTIST_ID
+		AND		A.ARTIST_ID = #{artistId}
+		ORDER	BY ISSUE_DATE DESC
+	</select> -->
+	
+ </mapper>

@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+#gnb {
+	position: relative;
+	border: 1px solid #fff;
+	padding-bottom: 30px;
+    width: 550px;
+    margin: 0 auto;
+   /* padding: 68px 0 42px;*/
+    z-index: 20;
+    text-align: center;
+	border: 1px solid #fff;
+	/*padding-bottom: 30px;*/
+}
+#join_wrapper {
+	margin: 0;
+	padding: 0;
+	
+}
+.join_title{
+	padding-top: 35px;
+    font-size: 32px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #333;
+    line-height: 46px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: -3px;
+}
+
+
+#join_wrapper #top_line {
+	border: 1px solid #00cd3c;
+}
+#member_header {
+	margin: 0 auto;
+	width: 1008px;
+	margin-top: 68px;
+}
+
+#member_header #gnb > h1 {
+	text-align: center;
+
+}
+.joinForm_box {
+	margin: 0 auto;
+	width: 550px;
+	border: 1px solid #e1e1e1;
+}
+
+.joinForm_box > h2 {
+	padding-top: 35px;
+	font-size: 32px;
+	font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+	text-align: center;
+	font-weight: normal;
+	color: #333;
+	letter-spacing: -3px;
+}
+
+.send_id {
+	font-size: 23px;
+    line-height: 33px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #00b423;
+    letter-spacing: -1px;
+}
+
+.info_start {
+	margin-top: 34px;
+    padding: 0 58px;
+}
+.info-css {
+	font-size: 17px;
+    color: #333;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    vertical-align: top;
+    line-height: 28px;
+    letter-spacing: -1px;
+    text-align: left;
+    
+}
+
+.info-div {
+	margin-top: 34px;
+    padding: 0 58px;
+}
+.border-input { 
+	border: 1px solid #8e8e8e;
+	border-radius: 7px;
+	width: 329px;
+    height: 51px;
+}
+#receivenumber_box {
+	font-size: 16px;
+    color: #333;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+.style_input_text {
+	margin-left: 5px;
+	margin-top: 10px;
+	font-size: 16px;
+    color: #333;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+.email {
+	text-align: left;
+}
+.user-info {
+	clear: both;
+	display: block;
+    padding-top: 8px;
+    font-size: 16px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 26px;
+    color: #575757;
+    letter-spacing: -1px;
+   
+}
+
+.user-info > table, .pw-info > table {
+	margin-top: 6px;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.user-info > table tr td {
+	padding-top: 27px;
+	color: #000;
+}
+
+.user-info > table tr:last-child td {
+	padding-top: 5px;
+}
+#resendBtn {   
+	width: 150px;
+	background: 0;
+	cursor: pointer;
+	border: 0;
+	color: #7d7d7d;
+    font-size: 16px;
+    line-height: 29px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    letter-spacing: -1px;
+}
+.resent_btn {
+	margin-top: 12px;
+	text-align: center;
+	border-radius : 27px;
+ 	min-width: 22px;
+    height: 32px;
+    padding-right: 13px;
+}
+.text_span {
+	padding-left:10px;
+	text-align: center;
+	color: #000;
+}
+.buttom_button{
+	text-align: center;
+}
+.buttom_button a{
+	text-decoration: none;
+}
+.next_button{
+	display: inline-block;
+	min-width: 267px;
+	padding: 17px 0 21px;
+	background-color: #00cd3c;
+	font-size: 20px;
+	font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+	text-align: center;
+	color: #fff;
+	line-height: 28px;
+	margin-top: 34px;
+	margin-bottom: 42px;
+}
+.auth a {
+	display: block;
+	text-align: center;
+	width: 130px;
+	height: 32px;
+	line-height: 32px;
+	background: #fff;
+	border: 1px solid #00cd3c;
+	border-radius: 25px;
+	color: #00b423;
+    font-size: 16px;
+    cursor: pointer;
+}
+.pwX_box{
+	display: none;
+	position: absolute;
+    right: 66px;
+    top: 13px;
+	width: 21px;
+    height: 21px;
+    margin-top: 4px;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 27px;
+    color: #575757;
+    text-decoration: underline;
+    letter-spacing: -1px;
+    background: url(/Melon/img/user/find/btn_input_check.png) no-repeat;
+    cursor: pointer;
+}
+.x_box {
+   	display: none;
+	position: absolute;
+    right: 13px;
+    top: 13px;
+	width: 21px;
+    height: 21px;
+    margin-top: 4px;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 27px;
+    color: #575757;
+    text-decoration: underline;
+    letter-spacing: -1px;
+    background: url(/Melon/img/user/find/btn_input_check.png) no-repeat;
+    cursor: pointer;
+}
+.hideX {
+	display: none;
+}
+.input_box{
+	height: 53px;
+	line-height: 53px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	position: relative;
+	
+}
+.style_input_text {
+	border:none;
+}
+
+.singKey_check {
+	display: none;
+}
+#emailSignKey_tr {
+	width: 311px;
+	height: 53px;
+	border-radius: 7px;
+}
+.txt_susccess{
+	color: #00b423;
+}
+.write_info {
+	border-top:1px solid #e1e1e1;
+}
+.id_attention {
+	display: none;
+/* 	padding: 8px 0 0; */
+	font-size: 14px; 
+	line-height: 23px;
+/*     margin-left: 120px;  */
+	color: #333;
+	word-break:break-all;
+	word-wrap:break-word;
+/* 	width: 281px; */
+	position: relative;
+	color: red;
+}
+
+input.pwdInput {
+	width: 166px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    border: none !important;
+    box-shadow: none;
+    color: #333;
+    margin: 0 9px;
+}
+.btn_pw_view {
+    position: absolute;
+    top: 14px;
+    right: 9px;
+    width: 47px;
+    height: 26px;
+    margin-left: 12px;
+    background: url(/Melon/img/user/join/btn_pw_view.png) no-repeat;
+    vertical-align: top;
+    text-indent: -9999px;
+}
+.icon2 {
+	display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: url(/Melon/img/user/join/bg_radio20.png) no-repeat;
+
+}
+.radio_box2 {
+	display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.gender_box {
+	overflow: hidden;
+}
+.gender_radio {
+	overflow: hidden;
+	padding-top: 10px;
+}
+.gender_box li {
+	float: left;
+    width: 151px;
+};
+.radio_box {
+ 	display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.input_radio {
+	position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+	
+}
+.label_check{
+	float: left;
+    min-height: 30px;
+    padding-left: 31px;
+    color: #333;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    cursor: pointer;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+.input_genderLi{
+	
+}
+
+.radio_box li{
+	float: left;
+    width: 151px;
+}
+.radio_box2 .input_radio {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    margin: 2px 1px;
+    padding: 0;
+    vertical-align: top;
+}
+
+.radio_box2 .label_check {
+	float: left;
+    min-height: 30px;
+    padding-left: 31px;
+    color: #333;
+    font-size: 17px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    cursor: pointer;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+
+.icon {
+	display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: url(/Melon/img/user/join/bg_radio20.png) no-repeat;
+}
+
+.lebel {
+	display: inline-block;
+    padding-right: 73px;
+}
+
+
+.gen {
+	vertical-align: middle;
+    text-align: left;
+	font-size: 17px;
+    color: #333;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+
+.pwErrorMsg {
+	display: none;
+}
+.notEqual{
+	display: none;
+}

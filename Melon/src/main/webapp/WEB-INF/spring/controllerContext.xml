@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="magazineController" class="com.ktds.magazine.web.MagazineController">
+		<property name="magazineService" ref="magazineServiceImpl" />
+	</bean>
+	
+	<bean id="noticeController" class="com.ktds.notice.web.NoticeController">
+		<property name="noticeService" ref="noticeServiceImpl" />
+	</bean>
+	
+	<bean id="chartController" class="com.ktds.chart.web.ChartController">
+		<property name="chartService" ref="chartServiceImpl" />
+	</bean>
+	
+	<bean id="artistController" class="com.ktds.artist.web.ArtistController">
+		<property name="artistService" ref="artistServiceImpl" />
+	</bean>
+	
+	<bean id="mainController" class="com.ktds.main.web.MainController">
+		<property name="userService" ref="userService" />
+		<property name="searchService" ref="searchService" />
+		<property name="chartService" ref="chartServiceImpl" />
+		<property name="noticeService" ref="noticeServiceImpl" />
+		<property name="magazineService" ref="magazineServiceImpl" />
+	</bean>
+	
+	<bean id="searchController" class="com.ktds.search.web.SearchController">
+		<property name="searchService" ref="searchService" />
+	</bean>
+	
+	<bean id="replyController" class="com.ktds.reply.web.ReplyController">
+		<property name="replyService" ref="replyServiceImpl" />
+	</bean>
+
+</beans>

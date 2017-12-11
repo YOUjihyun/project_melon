@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.insert_subj {
+	margin: 0px 11px 0px 0px;
+	padding: 0px 14px 0px 0px;
+	vertical-align: baseline;
+	color: #8bc223;
+	background: url('http://cdnimg.melon.co.kr/resource/image/web/common/bg_tit_vline.png') 100% 9px no-repeat;
+}
+
+.subject {
+	float: left;
+	font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}

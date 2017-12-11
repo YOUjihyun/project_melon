@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+.melonChartWrapper {
+	width: 1008px;
+	margin-left: 195px;
+}
+
+.txtWrapper {
+	position: absolute;
+	display: none;
+	width: 500px;
+	height: 0px;
+	top: 350px;
+	left: 420px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+	color: #333;
+}
+
+.txtWrapper h1 {
+	color: #00cd3c;
+	padding: 15px 0 15px 50px;;
+	font-size: 17px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.txtWrapper .song_lyrics {
+	width: 400px;
+	height: 400px;
+	margin: 10px 50px;
+	overflow: auto;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	word-break:break-all;
+	line-height: 25px;
+}
+
+#mvWrapper {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	width: 560px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+}
+
+#mvWrapper {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	width: 560px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+}
+
+#mvWrapper h1 {
+	color: #00cd3c;
+	padding: 15px 0 15px 15px;;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+#mvWrapper #mv_btn_close {
+	position: absolute;
+    right: 16px;
+    top: 16px;
+    border: 0;
+    background: 0;
+}
+
+#mvWrapper #mv_btn_close span {
+	display: inline-block;
+	width: 21px;
+    height: 21px;
+    background: url(/Melon/img/user/login/btn_close_login.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.likeImg {
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+	background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat left top;
+}
+
+.likeCount {
+    width: auto;
+    height: auto;
+    background: none !important;
+    overflow: visible;
+    color: #666;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "돋움","dotum", "Apple Gothic",sans-serif;
+    vertical-align: middle;
+    text-indent: 0;
+}
+
+#currentDateTime {
+	color: #626262;
+	/* font-weight: bold; */
+	font-size: 24px;
+	font-family: 고딕체;
+	padding-left: 400px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+#conts {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    display: block;
+    width: 1008px;
+    min-height: 800px;
+    padding: 29px 17px 88px;
+    zoom: 1;
+    font-family: "맑은 고딕","Malgun Gothic","돋움",Dotum,"Apple Gothic",sans-serif;
+}
+
+select {
+	border: none;
+	color: #56ac00;
+	font-size: 25px;
+}
+
+option {
+	color: #626262;
+	font-size: 16px;
+	font-family: 고딕체;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+}
+
+.chartBody {
+	width: 1008px;
+	margin-top: 10px;
+}
+
+.chartBody > table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.chartBody > table tr th {
+	height: 48px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    color: #606060;
+    font-size: 13px;
+    font-family: "돋움",Dotum,Arial,sans-serif;
+    vertical-align: middle;
+}
+
+.tab_menu {
+    position: relative;
+    background-color: #fcfcfc;
+}
+
+.tab_menu ul {
+	position: relative;
+	width: 1008px;
+	border-top: 1px solid #e3e3e3;
+}
+
+.tab_menu ul li {
+    float: left;
+    background-color: #fcfcfc;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.tab_menu ul li.first_child {
+    margin-left: -1px;
+}
+
+.tab_menu ul li.first_child a, .tab_menu ul li.first_child.on a {
+	border-left: 1px solid #fff;
+}
+
+.tab_menu ul li.on .link_tab {
+    width: 191px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background-color: #fff;
+    color: #00b423;
+    font-weight: bold;
+}
+
+.tab_menu .link_tab {
+    display: block;
+    position: relative;
+    width: 192px;
+    min-height: 16px;
+    line-height: 1.4;
+    padding: 12px 4px 16px;
+    border-left: 1px solid #fcfcfc;
+    border-right: 1px solid #fcfcfc;
+    background-color: #fcfcfc;
+    color: #575757;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tab_menu .link_tab span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 71px;
+    background-position: -111px 0 !important;
+}
+
+.lay_menu {
+    width: 1030px; 
+    height: 50px;
+    padding-left: 195px;
+    padding-right: 220px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.lay_menu li {
+    float: left;
+    width: auto;
+    margin: 7px 0 0 0;
+}
+
+.lay_menu a {
+	height: 23px;	
+}
+
+.lay_menu li.first_child {
+	margin-left: 0;
+	padding-left: 8px;
+}
+
+.lay_menu li a {
+    display: block;
+    padding: 11px 12px 0 12px;
+    cursor: pointer;
+}
+
+.lay_menu li a .m1 {
+	display: block;
+    height: 19px;
+    width: 83px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 0px -40px !important;
+    background-position: 0 -40px; !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m2 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+   	background-position: -111px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m2:hover {
+   	background-position: -111px -40px !important;
+}
+
+.lay_menu li a .m3 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+    background-position: -210px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m3:hover {
+    background-position: -210px -40px !important;
+}
+
+.lay_menu li a .m4 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+    background-position: -305px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m4:hover {
+    background-position: -305px -40px !important;
+}
+
+.lay_menu li a .m5 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+    background-position: -404px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m5:hover {
+    background-position: -404px -40px !important;
+}
+
+.lay_menu li:last-child {
+	float: right;
+	margin-right: 15px;
+}
+
+.lay_menu li:last-child inp {
+	float: right;
+	margin-right: 15px;
+}
+
+.page_header {
+	position: relative;
+    margin-bottom: 8px;
+}
+
+.page_header h2.title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.tooltip {
+	float: left;
+    margin-left: 4px;
+    padding-left: 145px;
+}
+
+.question_mark {
+	background: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png) no-repeat -458px -31px !important;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+    top: 10px;
+    border: none;
+}
+
+.conts {	
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    display: block;
+    width: 1008px;
+    min-height: 800px;
+    padding: 29px 0 88px;
+    zoom: 1;
+    font-family: "맑은 고딕","Malgun Gothic","돋움",Dotum,"Apple Gothic",sans-serif;
+}
+
+.page_header {
+	border: 0;
+}
+
+.title {
+	height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: left;	
+}
+
+.tab_menu ul li a span:hover {
+	text-decoration: underline;
+}
+
+.chart_finder_btn {
+	width: 100px;
+    height: 34px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 5px -468px !important;
+    text-indent: -9999px;
+    border: none;
+}
+
+.chart_finder_btn:hover {
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 5px -509px !important;
+}
+
+.chartBody > table tr td {
+    height: 84px;
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.chartBody input[type='checkbox'] {
+	vertical-align: middle;
+}
+
+.rank span {
+	display: inline-block;
+	position: relative;
+	top: -1px;
+	color: #333;
+    font-size: 18px;
+    font-family: 'Nunito',sans-serif;
+}
+
+.rank button {
+    display: inline-block;
+    width: 51px;
+    height: 41px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -311px -30px;
+    border: none;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.rank_variation {
+	width: 14px;
+	height: 10px;
+	background: url(/Melon/img/chart/albumInfo/bullet_icons_sprite_20170828.png) no-repeat 0px -15px;
+}
+
+.song_info a {
+	display: inline-block;
+	width: 12px;
+	height: 15px;
+    margin-left: 12px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -286px -30px;
+    vertical-align: middle;
+}
+
+.song div {
+	margin-left: 12px;
+	text-align: left;
+}
+
+.song div:first-child a {
+	color: #000;
+	font-size: 10pt;
+}
+
+.like_td button {
+	border: none;
+	background: #fff;
+}
+
+.like_td button span:first-child {
+	display: inline-block;
+    position: relative;
+    top: 1px;
+    width: 14px;
+    height: 12px;
+    background: url(/Melon/img/chart/albumInfo/bullet_icons_sprite_20170828.png) no-repeat -69px -15px;
+    vertical-align: top;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.like_td button span:last-child {
+	color: #888;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: 0;
+    vertical-align: top;
+}
+
+.play_td button {
+	border: none;
+	background: #fff;
+    display: inline-block;
+    width: 16px;
+    height: 28px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: 0 -30px;
+    vertical-align: middle;
+}
+
+.contain_td button {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+    width: 19px;
+    height: 28px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -45px -30px;
+    vertical-align: middle;
+}
+
+.download_td a {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+    width: 21px;
+    height: 24px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -98px -30px;
+    vertical-align: middle;
+}
+
+.mv_td a {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+ 	width: 24px;
+ 	height: 28px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -152px -30px;
+    vertical-align: middle;
+}
+
+.bell_td button {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+    width: 18px;
+    height: 28px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png); 
+    background-repeat: no-repeat;
+    background-position: -206px -30px;
+    vertical-align: middle;
+}
+
+.button_rbox {
+	display: inline-block;
+	height: 30px;
+    line-height: 28px;
+    padding: 0 16px;
+    border: 1px solid #b2b2b2;
+    border-radius: 100px;
+    color: #606060;
+    background-color: #fff;
+    font-size: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background: 
+}
+
+.button_icon .b1 {
+	display: inline-block;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png); 
+    background-repeat: no-repeat;
+	width: 11px;
+    height: 13px;
+    background-position: 10px 0;
+}
+
+.b1 {
+	display: inline-block;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png); 
+    background-repeat: no-repeat;
+	width: 11px;
+    height: 13px;
+    background-position: 0 0;
+}

@@ -1,0 +1,825 @@
+@charset "UTF-8";
+
+.txtWrapper {
+	position: absolute;
+	display: none;
+	width: 500px;
+	height: 0px;
+	top: 350px;
+	left: 420px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+	color: #333;
+}
+
+.txtWrapper h1 {
+	color: #00cd3c;
+	padding: 15px 0 15px 50px;;
+	font-size: 17px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.txtWrapper .song_lyrics {
+	width: 400px;
+	height: 400px;
+	margin: 10px 50px;
+	overflow: auto;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	word-break:break-all;
+	line-height: 25px;
+}
+
+#mvWrapper {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	width: 560px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #00cd3c;
+	background: #fff;
+	z-index: 9999;
+}
+
+#mvWrapper h1 {
+	color: #00cd3c;
+	padding: 15px 0 15px 15px;;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+#mvWrapper #mv_btn_close {
+	position: absolute;
+    right: 16px;
+    top: 16px;
+    border: 0;
+    background: 0;
+}
+
+#mvWrapper #mv_btn_close span {
+	display: inline-block;
+	width: 21px;
+    height: 21px;
+    background: url(/Melon/img/user/login/btn_close_login.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.head_title {
+	font-size: 19pt;
+	color: #000;
+	font-weight: bold;
+	font-family: 고딕체;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	letter-spacing: -2px;
+}
+
+#albumInfoWrapper {
+	width: 1008px;
+	display : inline-block;
+	margin-left: 205px;
+	margin-right: 175px;
+}
+
+.albumInfoBox {
+	border: 1px solid #aaa;
+	border-top: 2px solid #555;
+	padding: 20px;
+}
+
+.leftSide {
+	display : inline-block;
+	width: 230px;
+	vertical-align: middle;
+}
+
+.inline {
+	display : inline-block;
+}
+
+.albumBoxBtn1 {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album03.png) 0px 0 no-repeat;
+    width: 70px;
+    height: 42px;
+    display: inline-block;
+	background-position: 90 0px;
+	vertical-align: top;
+}
+
+.albumBoxBtn1:hover {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album03.png) 0 -48px no-repeat;
+}
+
+.albumBoxBtn2 {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album03.png) -73px 0 no-repeat;
+    width: 70px;
+    height: 42px;
+    display: inline-block;
+}
+
+.albumBoxBtn2:hover {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album03.png) -73px -48px no-repeat;
+}
+
+.albumBoxBtn3 {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album03.png) -146px 0 no-repeat;
+    width: 70px;
+    height: 42px;
+    display: inline-block;
+}
+
+.albumBoxBtn3:hover {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album03.png) -146px -48px no-repeat;
+}
+
+.centralSide {
+	display : inline-block;
+	font-size: 12px;
+	width: 400px;
+	vertical-align: top;
+}
+ 
+.centralSide span {
+	display: inline-block;
+	font-size: 23px;
+	font-family: 고딕체;
+	color: #000;
+	font-weight: bold;
+}
+
+.leftAlbumInfo {
+	color: #666;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.rightSide {
+	display : inline-block;
+	width: 280px;
+	height: 270px;
+	vertical-align: top;
+	text-align: right;
+	border-left: 1px solid #ddd;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #000;
+	font-family: 고딕체;
+}
+
+.rateAndReview {
+	float: left;
+	color: #999;
+}
+
+.rateMenu {
+	border-bottom: 1px solid #ddd;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.rateMenu span {
+	color: #80ba00;
+	font-size: 20px;
+}
+
+.rateMenu h3 {
+	color: #000;
+	font-size: 29px;
+}
+
+.rateMenu div {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.raters {
+	margin-top: 10px;
+}
+
+.raters span {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.rateBtn {
+	float: right;
+	text-align: right;
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album02.png) -152px 0 no-repeat;
+	width: 72px;
+    height: 24px;
+}
+
+.reviewBtn {
+	float: right;
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album02.png) -228px 0 no-repeat;
+	width: 172px;
+    height: 24px;
+}
+
+.like_btn {
+	background: url(/Melon/img/chart/albumInfo/btn_like_b.png) -0px 0 no-repeat;
+	width: 116px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.like_count {
+	border: 1px solid #000;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+}
+
+.rightAlbumInfo {
+	color: #000;
+	margin-left: 15px;
+}
+
+.right {
+	float: right;
+}
+
+.menu_title {
+	font-size: 19px;
+	color: #000;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-family: 고딕체;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.menu_title > span {
+	color: #00d700;
+	font-weight: bolder;
+}
+
+.suggest_to_frineds {
+	background: url(/Melon/img/chart/artistChannel/bg_btn_sns_140822.png) 0px 0 no-repeat;
+	width: 31px;
+    height: 28px;
+}
+
+.suggest_to_frineds:hover {
+	background-position: 0px -44px;
+}
+
+.facebook {
+	background: url(/Melon/img/chart/artistChannel/bg_btn_sns_140822.png) -30px 0px no-repeat;
+	width: 31px;
+    height: 28px;
+}
+
+.facebook:hover {
+	background-position: -30px -44px;
+	
+}
+
+.tweeter {
+	background: url(/Melon/img/chart/artistChannel/bg_btn_sns_140822.png) -60px 0 no-repeat;
+	width: 31px;
+    height: 28px;
+}
+
+.tweeter:hover {
+	background-position: -60px -44px;
+}
+
+.gift_btn span {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album_140822.png) -220px 0 no-repeat;
+	width: 118px;
+	height: 28px;
+	margin-left: 20px;
+}
+
+.gift_btn span:hover {
+	background: url(/Melon/img/chart/albumInfo/btn_sprite_dtl_album_140822.png) -220px -32px no-repeat;
+}
+
+.orderBox {
+	width: 101px;
+	border: 1px solid #000;
+}
+
+.songInfo {
+	vertical-align: top;
+	background-color: skyblue;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.albumTitle {
+	vertical-align: top;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	margin-bottom: 9px;
+}
+
+.albumTitle a {
+	margin-left: 16px;
+}
+
+.musicButtons {
+	line-height: -15px;
+}
+
+.paging {
+	text-align: center;
+	font-size: 18px;
+	font-family: 고딕체;
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+
+.paging a {
+	color: #000;
+}
+
+.paging a:hover {
+	color: #00b700;
+}
+
+.paging span {
+	color: #ddd;
+}
+
+.likeMark {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	background: url(/Melon/img/chart/albumInfo/bullet_icons_sprite_20170828.png) -69px -15px no-repeat;
+}
+
+.tab_menu {
+    position: relative;
+    background-color: #fcfcfc;
+}
+
+.tab_menu ul {
+	position: relative;
+	width: 1008px;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.tab_menu ul li {
+    float: left;
+    background-color: #fcfcfc;
+}
+
+.tab_menu ul li.first_child {
+    margin-left: -1px;
+}
+
+.tab_menu ul li.first_child a, .tab_menu ul li.first_child.on a {
+	border-left: 1px solid #fff;
+}
+
+.tab_menu ul li.on .link_tab {
+    width: 191px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background-color: #fff;
+    color: #00b423;
+    font-weight: bold;
+}
+
+.tab_menu .link_tab {
+    display: block;
+    position: relative;
+    width: 192px;
+    min-height: 16px;
+    line-height: 1.4;
+    padding: 12px 4px 16px;
+    border-left: 1px solid #fcfcfc;
+    border-right: 1px solid #fcfcfc;
+    background-color: #fcfcfc;
+    color: #575757;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tab_menu .link_tab span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 71px;
+    background-position: -111px 0 !important;
+}
+
+.lay_menu {
+	display: block;
+    float: left;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 1008px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    background: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    z-index: 11;
+}
+
+.lay_menu li {
+    float: left;
+    width: auto;
+    margin: 7px 0 0 0;
+}
+
+.lay_menu li.first_child {
+	margin-left: 0;
+	padding-left: 8px;
+}
+
+.lay_menu li.first_child a {
+    padding-left: 8px;
+}
+
+.lay_menu li a {
+    display: block;
+    padding: 11px 12px 0 12px;
+    cursor: pointer;
+}
+
+.lay_menu li a .m1 {
+	display: block;
+    height: 19px;
+    width: 83px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 0px -40px !important;
+    background-position: 0 -40px; !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m2 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+   	background-position: -111px 0 !important;
+    
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m3 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+    background-position: -210px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m4 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+    background-position: -305px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li a .m5 {
+	display: block;
+    height: 19px;
+    width: 71px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 10px 0 !important;
+    background-position: -404px 0 !important;
+    text-indent: -9999px;
+}
+
+.lay_menu li:last-child {
+	float: right;
+	margin-right: 15px;
+}
+
+.conts {	
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    display: block;
+    width: 1008px;
+    min-height: 800px;
+    padding: 29px 0 88px;
+    zoom: 1;
+    font-family: "맑은 고딕","Malgun Gothic","돋움",Dotum,"Apple Gothic",sans-serif;
+}
+
+.page_header {
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+h2.title {
+	height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: left;	
+}
+
+.chart_finder_btn {
+	width: 100px;
+    height: 34px;
+    background: url(/Melon/img/chart/albumInfo/bg_menu_sub_170426.png) no-repeat 5px -468px !important;
+    text-indent: -9999px;
+    border: none;
+}
+
+.chartBody > table tr td {
+    height: 84px;
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.chartBody input[type='checkbox'] {
+	vertical-align: middle;
+}
+
+.rank span {
+	display: inline-block;
+	position: relative;
+	top: -1px;
+	color: #333;
+    font-size: 18px;
+    font-family: 'Nunito',sans-serif;
+}
+
+.rank button {
+    display: inline-block;
+    width: 51px;
+    height: 41px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -311px -30px;
+    border: none;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.song_info a {
+	display: inline-block;
+	width: 12px;
+	height: 15px;
+    margin-left: 12px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -286px -30px;
+    vertical-align: middle;
+}
+
+.song div {
+	margin-left: 12px;
+	text-align: left;
+}
+
+.like_td button {
+	border: none;
+	background: #fff;
+}
+
+.like_td button span:first-child {
+	display: inline-block;
+    position: relative;
+    top: 1px;
+    width: 14px;
+    height: 12px;
+    background: url(/Melon/img/chart/albumInfo/bullet_icons_sprite_20170828.png) no-repeat -69px -15px;
+    vertical-align: top;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.like_td button span:last-child {
+	color: #888;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: 0;
+    vertical-align: top;
+}
+
+.play_td button {
+	border: none;
+	background: #fff;
+    display: inline-block;
+    width: 16px;
+    height: 28px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: 0 -30px;
+    vertical-align: middle;
+}
+
+.contain_td button {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+    width: 19px;
+    height: 28px;
+    background-image: url(/Melon/img/chart/albumInfo/button_icons_sprite_20170828.png);
+    background-repeat: no-repeat;
+    background-position: -45px -30px;
+    vertical-align: middle;
+}
+
+.like_div {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.likeImg {
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+	background: url(/Melon/img/search/bg_sprite_gray.png) no-repeat left top;
+}
+
+.likeCount {
+    width: auto;
+    height: auto;
+    background: none !important;
+    overflow: visible;
+    color: #666;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "돋움","dotum", "Apple Gothic",sans-serif;
+    vertical-align: middle;
+    text-indent: 0;
+}
+
+.mv_td a {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+ 	width: 23px;
+ 	height: 23px;
+    background: url(/Melon/img/chart/albumInfo/bg_sprite_gray.png) no-repeat -28px top;
+    vertical-align: middle;
+}
+
+.download_td a {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+ 	width: 24px;
+ 	height: 25px;
+    background: url(/Melon/img/chart/albumInfo/bg_btn_flac.png) no-repeat 0px top;
+    vertical-align: middle;
+}
+
+.ringNbell_td {
+	border: none;
+	background: #fff;
+ 	display: inline-block;
+ 	width: 23px;
+ 	height: 23px;
+    background: url(/Melon/img/chart/albumInfo/bg_sprite_gray.png) no-repeat -252px top;
+    vertical-align: middle;
+}
+
+
+#albumInfoWrapper > table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+ 
+ 
+#albumInfoWrapper table th {
+	height: 26px;
+	border-top: 1px solid #ccc;
+	border-bottom: 2px solid #80ba00;
+    color: #8ca456;
+    font-family: "돋움","Dotum","Apple Gothic",sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#albumInfoWrapper table tr td {
+	height: 39px;
+	text-align: center;	
+	vertical-align: middle;
+	border-bottom: 1px solid #eee;
+	line-height: -6px;
+}
+
+#albumInfoWrapper table tr td:nth-child(3) {
+	vertical-align: middle;
+}
+
+#albumInfoWrapper table tr td:nth-child(4) {
+	text-align: left;	
+}
+
+.centralSide > table {
+	border: 1px solid #fff;
+}
+
+.play_btn {
+	background: url(/Melon/img/chart/albumInfo/bg_sprite_green.png) no-repeat -168px top;
+	width: 23px;
+    height: 23px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.add_btn {
+	background: url(/Melon/img/chart/albumInfo/bg_sprite_gray.png) no-repeat -308px top;
+	width: 23px;
+    height: 23px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.lyrics_btn {
+	background: url(/Melon/img/chart/albumInfo/bg_sprite_gray.png) no-repeat -526px top;
+	width: 14px;
+    height: 17px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+
+.select_all_green_btn {
+	background: url(/Melon/img/chart/albumInfo/play_menu_btn.jpg) no-repeat -7px top;
+	width: 72px;
+    height: 35px;
+    display: inline-block;
+}
+
+
+.green_buttons {
+	border-bottom: 1px solid #ccc;
+}
+
+.listen_green_btn {
+	background: url(/Melon/img/chart/albumInfo/play_menu_btn.jpg) no-repeat -83px top;
+	width: 50px;
+    height: 35px;
+    display: inline-block;
+}
+
+.download_green_btn {
+	background: url(/Melon/img/chart/albumInfo/play_menu_btn.jpg) no-repeat -138px top;
+	width: 50px;
+    height: 35px;
+    display: inline-block;
+}
+
+.flac_green_btn {
+	background: url(/Melon/img/chart/albumInfo/play_menu_btn.jpg) no-repeat -191px top;
+	width: 78px;
+    height: 35px;
+    display: inline-block;	
+}
+
+.add_green_btn {
+	background: url(/Melon/img/chart/albumInfo/play_menu_btn.jpg) no-repeat -272px top;
+	width: 50px;
+    height: 35px;
+    display: inline-block;	
+}
+
+.gift_green_btn {
+	background: url(/Melon/img/chart/albumInfo/play_menu_btn.jpg) no-repeat -326px top;
+	width: 78px;
+    height: 35px;
+    display: inline-block;	
+}
+
+.subtitle {
+	padding-top: 20px;
+}

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+#footerWrapper {
+	clear: both;
+	width: 100%;
+    background: url(/Melon/img/footer/bg_footer.jpg) repeat-x;
+}
+
+#footer_content {
+	min-height: 247px;
+    padding: 0 20px;
+    width: 1008px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer_menu {
+    overflow: hidden;
+}
+
+.fm_ul {
+	list-style: none;
+	float: right;
+	overflow: hidden;
+}
+
+.fm_ul li {
+	position: relative;
+    float: left;
+    margin-left: 22px;
+}
+
+.fm_ul li a {
+	text-decoration: none;
+    display: inline-block;
+    padding: 18px 0 15px;
+    font-size: 0;
+    line-height: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+.fm_ul li a:hover {
+	text-decoration: underline;
+}
+
+.fm_ul li:first-child a span {
+    display: block;
+    width: 99px;
+    height: 19px;
+    background: url(/Melon/img/footer/footer_menu_170511.png) no-repeat;
+    background-position: -281px 0 !important;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.fm_ul li:nth-child(2) a span {
+    display: block;
+    width: 107px;
+    height: 19px;
+    background: url(/Melon/img/footer/footer_menu_170511.png) no-repeat;
+    background-position: -515px 0 !important;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.fm_ul li:nth-child(3) a span {
+    display: block;
+    width: 76px;
+    height: 19px;
+    background: url(/Melon/img/footer/footer_menu_170511.png) no-repeat;
+    background-position: -627px 0 !important;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.fm_ul li:nth-child(4) a span {
+    display: block;
+    width: 49px;
+    height: 19px;
+    background: url(/Melon/img/footer/footer_menu_170511.png) no-repeat;
+    background-position: -461px 0 !important;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.footer_policy {
+	overflow: hidden;
+    margin-top: 26px;
+    margin-left: 1px;
+    font-size: 0;
+    line-height: 0;
+    list-style: none;
+}
+
+.footer_policy li {
+    float: left;
+    margin-left: 4px;
+    padding: 0 0 0 6px;
+    background: url(/Melon/img/footer/bg_gray_line03.png) no-repeat left 1px;
+}
+
+.footer_policy li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.footer_policy li a {
+    display: inline-block;
+    padding: 0 3px;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "돋움",Dotum,"맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    color: #505050;
+    text-decoration: none;
+}
+
+.footer_policy li:last-child a {
+	color: #8f8f8f;
+}
+
+.footer_policy li a:hover {
+	text-decoration: underline;
+}
+
+#footer_content > p {
+    margin: 19px 0 0;
+    font-size: 11px;
+    line-height: 20px;
+    color: #909090;
+    font-family: "돋움",Dotum,"맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+}
+
+#footer_content > p span {
+   	display: inline-block;
+    padding: 0 8px 0 8px;
+    font-size: 11px;
+    background: url(/Melon/img/footer/bg_gray_line07.png) no-repeat left 4px;
+    vertical-align: middle;
+}
+
+#footer_content > p span a {
+    color: #909090;
+    text-decoration: none;
+}
+
+#footer_content > p span:first-child {
+    background: 0;
+    padding-left: 0;
+}
+
+.ban {
+	height: 64px;
+    margin-left: 1px;
+    padding: 33px 0 0 4px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.ban a {
+    margin-right: 19px;
+}
+
+
+

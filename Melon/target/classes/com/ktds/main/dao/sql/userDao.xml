@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="UserDao">
+	<insert id="insertNewMember" parameterType="UserVO">
+		INSERT INTO MEMBER ( 
+								ID
+								, PASSWORD
+								, NAME
+								, PHONE_NO
+								, NICK_NAME
+								, GENDER
+								, MEMBER_BIRTHDAY
+								, EMAIL
+						) 
+		VALUES			( 
+								#{id}
+								, #{password}
+								, #{name}
+								, #{phoneNo}
+								, #{nickName}
+								, #{gender}
+								, #{memberBirthday}
+								, #{email}
+						)	
+		
+	</insert>
+	
+	<update id="updatePhoneNumber" parameterType="UserVO">
+		UPDATE	MEMBER
+		SET		PHONE_NO = #{phoneNo}
+		WHERE	ID = #{id}
+	</update>
+	
+	<update id="updateEmail" parameterType="UserVO">
+		UPDATE 	MEMBER
+		SET 	EMAIL = #{email}
+		WHERE	ID = #{id}
+	</update>
+	
+	<select id="selectUserInfo" parameterType="String" resultType="UserVO">
+		SELECT	ID	id
+				, PASSWORD password
+				, NAME name
+				, PHONE_NO phoneNo
+				, NICK_NAME nickName
+				, GENDER gender
+				, MEMBER_BIRTHDAY memberBirthday
+				, EMAIL email
+				, PROFILE_PHOTO profilePhoto
+		FROM	MEMBER
+		WHERE	ID = #{id}
+	</select>
+	
+	<select id="selectUser" parameterType="UserVO" resultType="UserVO">
+		SELECT	ID	id
+				, PASSWORD password
+				, NAME name
+				, PHONE_NO phoneNo
+				, NICK_NAME nickName
+				, GENDER gender
+				, MEMBER_BIRTHDAY memberBirthday
+				, EMAIL email
+				, PROFILE_PHOTO profilePhoto
+		FROM	MEMBER
+		WHERE	ID = #{id}
+		AND		PASSWORD = #{password}
+	</select>
+		
+	
+	<select id="selectConfirmPhone" parameterType="String" resultType="UserVO">
+		SELECT	ID	id
+				, PASSWORD password
+				, NAME name
+				, PHONE_NO phoneNo
+				, NICK_NAME nickName
+				, GENDER gender
+				, MEMBER_BIRTHDAY memberBirthday
+				, EMAIL email
+				, PROFILE_PHOTO profilePhoto
+		FROM 	MEMBER
+		WHERE	PHONE_NO = #{value}
+	</select>
+	<select id="selectConfirmId" parameterType="String" resultType="UserVO">
+		SELECT	ID	id
+				, PASSWORD password
+				, NAME name
+				, PHONE_NO phoneNo
+				, NICK_NAME nickName
+				, GENDER gender
+				, MEMBER_BIRTHDAY memberBirthday
+				, EMAIL email
+				, PROFILE_PHOTO profilePhoto
+		FROM 	MEMBER
+		WHERE	ID = #{value}
+	</select>
+	
+	<select id="selectConfirmNick" parameterType="String" resultType="UserVO">
+		SELECT	ID	id
+				, PASSWORD password
+				, NAME name
+				, PHONE_NO phoneNo
+				, NICK_NAME nickName
+				, GENDER gender
+				, MEMBER_BIRTHDAY memberBirthday
+				, EMAIL email
+				, PROFILE_PHOTO profilePhoto
+		FROM 	MEMBER
+		WHERE	NICK_NAME = #{value}
+	</select>
+	
+	<select id="selectIdFind" parameterType="UserVO" resultType="UserVO">
+		SELECT	ID id
+				, NAME name
+				, EMAIL email
+		FROM 	MEMBER
+		WHERE	NAME = #{name}
+		AND		EMAIL = #{email}
+	</select>
+	
+	<select id="selectFindPw" parameterType="UserVO" resultType="UserVO">
+		SELECT	ID	id
+				, PASSWORD password
+				, NAME name
+				, PHONE_NO phoneNo
+				, NICK_NAME nickName
+				, GENDER gender
+				, MEMBER_BIRTHDAY memberBirthday
+				, EMAIL email
+				, PROFILE_PHOTO profilePhoto
+		FROM	MEMBER
+		WHERE	ID = #{id}
+		AND		NAME = #{name}
+	</select>
+	
+	<update id="updateChangePassword" parameterType="UserVO">
+		UPDATE	MEMBER
+		SET		PASSWORD = #{password}
+		WHERE	ID = #{id}
+	</update>
+	
+	<delete id="deleteUser" parameterType="String">
+		DELETE
+		FROM	MEMBER
+		WHERE	ID = #{value}
+	</delete>
+</mapper>
